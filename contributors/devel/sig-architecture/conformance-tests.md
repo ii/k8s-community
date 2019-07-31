@@ -243,6 +243,8 @@ To promote a test to the conformance test suite, open a PR as follows:
   - adds a comment immediately before the `ConformanceIt()` call that includes
     all of the required [conformance test comment metadata]
   - adds the test name to the [conformance.txt] file
+- before you commit & push, regenerate `conformance.txt` with the the following
+  command: `go run test/conformance/walk.go test/e2e > test/conformance/testdata/conformance.txt`
 - add the PR to SIG Architecture's [Conformance Test Review board] in the To
   Triage column
 
